@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Train Ticket Booking</h2>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>From:</label>
+        <input type="text" placeholder="Enter departure city" required>
+
+        <label>To:</label>
+        <input type="text" placeholder="Enter destination city" required>
+
+        <label>Travel Date:</label>
+        <input type="date" required>
+
+        <label>Class:</label>
+        <select>
+            <option>Sleeper</option>
+            <option>AC 3 Tier</option>
+            <option>AC 2 Tier</option>
+            <option>First Class</option>
+        </select>
+
+        <label>Number of Passengers:</label>
+        <input type="number" min="1" max="10" required>
+
+        <button type="submit">Book Ticket</button>
+    </form>
+</div>
+
+</body>
+</html>
