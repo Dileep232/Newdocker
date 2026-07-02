@@ -8,7 +8,9 @@ pipeline {
     }
     stage ('creating image with docker file') {
       steps {
-        sh 'docker build -t myimage:one .'
+        sh '''
+        docker rmi -f myimage:one || true
+        docker build -t myimage:one .'''
       }
     }
     stage ('deploying image to container') {
